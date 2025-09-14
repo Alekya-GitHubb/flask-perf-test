@@ -94,9 +94,7 @@ flask-perf-test/
 
 The full performance comparison (with results, tables, and screenshots) is available here:
 
-
-
-👉 REPORT.md
+ REPORT.md
 
 
 
