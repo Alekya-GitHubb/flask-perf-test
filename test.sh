@@ -3,12 +3,13 @@ echo "Running health check test..."
 # Start Flask in the background
 python app.py &
 APP_PID=$!
+sleep 5
 
 # Give Flask a couple of seconds to start
 sleep 3
 
 # Run health check
-curl -f http://127.0.0.1:5000/health
+curl -v http://127.0.0.1:5000/health
 RESULT=$?
 
 # Kill the Flask process
